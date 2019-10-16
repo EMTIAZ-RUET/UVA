@@ -1,0 +1,28 @@
+/// use c++ stl and then got ac
+/// otherwise you also use kmp algoritm
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int t;
+    cin>>t;
+    while(t--)
+    {
+        string s;
+        cin>>s;
+        int n;
+        cin>>n;
+        while(n--)
+        {
+            string s1;
+            cin>>s1;
+            if(s.substr(s.find(s1[0]),s1.size())==s1)
+                cout<<"y"<<endl;
+            else
+                cout<<"n"<<endl;
+
+        }
+    }
+}
